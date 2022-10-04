@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>疫廚GO【帳號驗證】</title>
+	
+	<style>
+		
+		table
+		{
+			width:30%;
+			background-color:#E2DEDA;
+			border:1px #DDD solid;
+			padding:10px;
+		}
+		
+		td
+		{
+			padding:5px;
+		}
+		
+		.account
+		{
+			font-size:20px;
+		}
+		
+		.email
+		{
+			font-size:20px;
+		}
+		
+		input[type="text"]
+		{
+			width:150px;
+			height:25px;
+		}
+		
+		.btn1
+		{
+			width:300px;height:40px;
+			font-size:20px;
+			background-color:#F04646;
+			border:none;
+			color:#FFF;
+			margin:10px;
+			font-weight:bold;
+		}
+		
+	</style>
+	
+  </head>
+  <body style="background-color:#F3EBE0">
+	
+	<p align="center"><a href="index.php"><img src="image/brand.png" alt="brand" style="width:300px"></a></p>
+  
+    
+	<form method="post" action="verify.php">
+      <table align="center">
+		<tr>
+			<td align="center" colspan="2"><h1>帳號驗證</h1></td>
+		</tr>
+		
+		<tr>
+			<td align="center" colspan="2"><h3>請輸入您的帳號與電子郵件進行驗證</h3></td>
+		</tr>
+        <tr>
+			<td class="account" align="right">帳號：</td>
+			<td><input type="text" name="account" size="10" required></td>
+        </tr>
+		<tr>
+			<td class="email" align="right">電子信箱：</td>
+			<td><input type="text" name="email" size="30" required></td>
+        </tr>
+		<tr> 
+			<td style="height:20px"></td>
+		</tr>
+		
+        <tr>
+          <td align="center" colspan="2"> 
+			<button class="btn1" type="submit"><strong>驗證</strong></button>
+            　
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
